@@ -1,0 +1,12 @@
+I guess one way for the two to give the same result is if the binary operator
+had the associative property (doesn't matter if grouping the operation to the left
+or right).
+
+If the above is true, I am not sure there are any requirements on `e`? So either there
+is another solution, or I've missed something.
+
+(looked at the solution) - it was that `e` needs to be the identity (e.g. 0 if the
+operation is +). Somehow I don't believe it, so gonna try it out.
+mmmm - using addition (+) it indeed isn't necessary for `e` to be 0...I wonder
+what I'm missing.
+

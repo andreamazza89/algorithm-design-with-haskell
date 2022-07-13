@@ -1,0 +1,15 @@
+First of all, I need to understand why it isn't valid over infinite lists.
+
+the fusion law is
+
+  h . foldr f e = foldr g (h e)
+
+with the proviso (fusion condition) being that h (f x y) = g x (h y)
+
+so, trying to reason about why it might not work over an infinite list, I guess I can
+first imagine `h . foldr f e` working fine for an infinite list, but then under certain
+conditions that does not work once fused.
+
+mm I still don't have an intuition for how foldr does work over infinite lists, so I should
+build that first - but I think I'm gonna be weak and peek at the solution.
+

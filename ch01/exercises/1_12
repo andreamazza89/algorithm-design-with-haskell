@@ -1,0 +1,11 @@
+
+map (foldl f e) . inits = scanl
+
+I guess doing the inits at the beginning is wasteful as the fold then traverses each sublist.
+Instead, perhaps it could just be the one fold, that keeps each partial result.
+wait, is this basically scanl?
+
+---
+
+map (foldr f e) . tails = scanr
+

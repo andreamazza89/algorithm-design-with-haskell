@@ -1,0 +1,21 @@
+the artificial fusion (which requires the more specific proviso)
+  replace . foldr f 0 = foldr f 0
+
+  replace x = if even x then x else 0
+
+  f :: Int -> Int -> Int
+  f x y = 2 * x + y
+
+the 'too general' proviso
+  h (f x y) = g x (h y)
+
+mmmmaybe it's this?
+  h (f x y) = g x y
+
+I'll try write the proof, let's see
+
+
+replace (foldr f 0)
+  =
+  = foldr f 0
+
