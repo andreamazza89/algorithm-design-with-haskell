@@ -1,0 +1,10 @@
+h . foldl f e = ??
+
+my first intuition is that the rule would be the same, as the different
+associativity should not make a difference...maybe the proviso changes
+like
+
+f x y = g (h x) y
+
+?
+
